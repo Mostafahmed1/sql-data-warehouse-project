@@ -1,7 +1,17 @@
-/* Stored Procedure created to truncate and load data tables as a bulk insert process automatically
-via the line "exec Bronze.load_bronze"
+/* 
+==================================================================================
+Stored Procedure: Load Bronze Layer (Source -> Bronze)
+==================================================================================
+Script purpose:  
+	This Procedure is created to truncate and load data tables as a bulk insert process automatically
+	to the bronze schema.
+Parameters:
+	None.
+How to call it:
+	exec Bronze.load_bronze
 
 With separated lines and calculated time for each inserted table
+===================================================================================
 */
 create or alter PROCEDURE Bronze.load_bronze as
 Begin
